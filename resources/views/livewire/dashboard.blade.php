@@ -92,8 +92,8 @@
       </div>
       <div class="row mt-4">
         <div class="col-lg-7 mb-lg-0 mb-4">
-          <div class="card">
-            <div class="card-body p-3">
+          <div class="card d-none">
+            <div class="card-body p-3 ">
               <div class="row">
                 <div class="col-lg-6">
                   <div class="d-flex flex-column h-100">
@@ -118,7 +118,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 d-none">
           <div class="card h-100 p-3">
             <div class="overflow-hidden position-relative border-radius-lg bg-cover h-100" style="background-image: url('../assets/img/ivancik.jpg');">
               <span class="mask bg-gradient-dark"></span>
@@ -138,14 +138,15 @@
         <div class="col-lg-5 mb-lg-0 mb-4">
           <div class="card">
             <div class="card-body p-3">
-              <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3">
+              <div class="d-none bg-gradient-dark border-radius-lg py-3 pe-1 mb-3">
                 <div class="chart">
                   <canvas id="chart-bars" class="chart-canvas" height="170px"></canvas>
                 </div>
               </div>
-              <h6 class="ms-2 mt-4 mb-0"> Active Users </h6>
-              <p class="text-sm ms-2"> (<span class="font-weight-bolder">+23%</span>) than last week </p>
-              <div class="container border-radius-lg">
+              <h6 class="ms-2 mt-4 mb-0 d-none"> Active Users </h6>
+              <p class="text-sm ms-2 d-none"> (<span class="font-weight-bolder">+23%</span>) than last week </p>
+
+              <div class="container border-radius-lg d-none">
                 <div class="row">
                   <div class="col-3 py-3 ps-0">
                     <div class="d-flex mb-2">
@@ -248,35 +249,46 @@
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
-        <div class="col-lg-7">
+        
+        <div class="col-lg-12 ">
           <div class="card">
             <div class="card-header pb-0">
-              <h6>Sales overview</h6>
-              <p class="text-sm">
-                <i class="fa fa-arrow-up text-success"></i>
-                <span class="font-weight-bold">4% more</span> in 2021
-              </p>
+              <h6>Line Chart</h6>
             </div>
             <div class="card-body p-3">
+
               <div class="chart">
                 <canvas id="chart-line" class="chart-canvas" height="300px"></canvas>
               </div>
-              <div class="chart">
-                <canvas id="chart-donut" class="chart-canvas" height="300px"></canvas>
-              </div>
+             
             </div>
+
+            <!--  -->
+              <div class="card-header pb-0">
+                <h6>Donut Chart</h6>
+              </div>
+              <div class="card-body p-3">
+                <div class="chart">
+                  <canvas id="chart-donut" class="chart-canvas" height="300px"></canvas>
+                </div>
+              </div>
+            <!--  -->
+
+
           </div>
         </div>
+        
       </div>
-      <div class="row my-4">
+      <div class="row my-4 d-none">
         <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
-          <div class="card">
+          <div class="card d-none">
             <div class="card-header pb-0">
               <div class="row">
-                <div class="col-lg-6 col-7">
+                <!-- <div class="col-lg-6 col-7">
                   <h6>Projects</h6>
                   <p class="text-sm mb-0">
                     <i class="fa fa-check text-info" aria-hidden="true"></i>
@@ -294,11 +306,11 @@
                       <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
                     </ul>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
-            <div class="card-body px-0 pb-2">
-              <div class="table-responsive">
+            <div class="card-body px-0 pb-2 d-none">
+              <div class="table-responsive ">
                 <table class="table align-items-center mb-0">
                   <thead>
                     <tr>
@@ -546,7 +558,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 d-none">
           <div class="card h-100">
             <div class="card-header pb-0">
               <h6>Orders overview</h6>
